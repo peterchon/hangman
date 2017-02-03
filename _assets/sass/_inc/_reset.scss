@@ -1,0 +1,15 @@
+$dark-grey: #333;
+$open-sans: "Open Sans";
+
+
+html,
+body {
+  color: $dark-grey;
+  font-family: $open-sans, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}

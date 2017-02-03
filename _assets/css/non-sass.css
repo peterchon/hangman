@@ -1,0 +1,152 @@
+/**
+ * This is a file for non-sass compiled CSS
+ */
+
+body {
+    text-align: center;
+    background-color: #efefef;
+}
+
+.wrapper {
+    padding: 30px 0;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.hangman-container {
+    padding: 50px 0;
+    margin: 0 20%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition-property: border-color;
+    transition-duration: 600ms;
+}
+
+.hangman-container button {
+    font-size: 16px;
+    padding: 5px 15px 7px;
+    border: 1px solid #ccc;
+    background: linear-gradient(#efefef, #ccc);
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    color: #333;
+}
+
+.hangman-container,
+.score,
+.guesses {
+    margin-bottom: 20px;
+}
+
+.score:before {
+    content: "Your score:";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.guesses:before {
+    content: "Your guesses:";
+    display: block;
+    margin-bottom: 5px;
+}
+
+.box,
+.tile {
+    margin: 0 5px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.tile {
+    border: 1px solid #09f;
+    background-color: #09f;
+    color: white;
+}
+
+.wrong {
+    border-color: #ccc;
+    background-color: white;
+    color: black;
+}
+
+.platform {
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.post {
+    position: relative;
+    width: 80%;
+    height: 220px;
+    padding-top: 20px;
+    top: -20px;
+    border-right: 1px solid black;
+}
+
+.cross-beam {
+    margin-left: 50%;
+    width: 60%;
+    height: 1px;
+    border-bottom: 1px solid black;
+}
+
+.noose {
+    margin-left: 30%;
+    width: 1px;
+    height: 40px;
+    border-left: 1px solid black;
+}
+
+.head {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    margin-left: 22.5%;
+    border-radius: 100%;
+}
+
+.body {
+    border-left: 1px solid black;
+    width:1px;
+    height: 60px;
+    margin-left: 30%;
+    position: relative;
+}
+
+.body > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 1px solid black;
+    height: 40px;
+    width: 1px;
+    transform: rotate(45deg);
+}
+
+.body .arm-r,
+.body .leg-r {
+    transform: rotate(-45deg);
+}
+
+.body .leg-l,
+.body .leg-r {
+    top: 100%;
+    margin-top: -5px;
+}
+
+.body .arm-l,
+.body .leg-l {
+    margin-left: -15px;
+}
+
+
+.body .arm-r,
+.body .leg-r {
+    margin-left: 14px;
+}
